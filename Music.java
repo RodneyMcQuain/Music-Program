@@ -11,7 +11,7 @@ import java.util.Set;
 import javafx.scene.image.ImageView;
 
 /**
- * Class objects represent music. Containing information, such as artist, album, genre, year, and more.
+ * Class objects represent music. Containing fields artist, album, genre, year, cover art, features, rating, tracks, discs, and date added.
  * @author Rodney McQuain
  */
 public class Music implements Serializable, Comparable<Music> {
@@ -136,102 +136,4 @@ public class Music implements Serializable, Comparable<Music> {
 	public void setDateAdded(Calendar dateAdded) {
 		this.dateAdded = dateAdded;
 	}
-
-	public static void main(String[] args) {
-//		Scanner input = new Scanner(System.in);
-//
-//		Music artistAlbum = null;
-//		ArrayList<Music> musicList = new ArrayList<Music>();
-//
-//		
-//		String artist, album;
-//		System.out.println("How many entries?");
-//		int countEntries = 0;
-//
-//		int amountOfEntries = input.nextInt();
-//		input.nextLine();
-//
-//		for(int i = 1 + countEntries; i <= amountOfEntries + countEntries; i++) {
-//			if (i <= countEntries)
-//				continue;
-//			
-//			System.out.println("Enter the artist and album formatted as 'artist album'");
-//			artist = input.next();
-//			album = input.next();
-//			artistAlbum = new Music(artist, album);
-//			musicList.add(artistAlbum);
-//		}		
-//		try {
-//			FileOutputStream fileOut = new FileOutputStream("data.txt");
-//			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-//			out.writeObject(musicList);
-//			out.close();
-//			fileOut.close();
-//		} catch (IOException ioe2) {
-//			ioe2.printStackTrace();
-//		}
-		
-		
-		
-		
-		
-//		Scanner input = new Scanner(System.in);
-//		HashMap<Integer, Music> hm = null;
-//
-//		Music artistAlbum;
-//		int countEntries = 0;
-//		
-//		try {
-//			FileInputStream fileIn = new FileInputStream("1.txt");
-//			ObjectInputStream in = new ObjectInputStream(fileIn);
-//			hm = (HashMap) in.readObject();
-//			Set set = hm.entrySet();
-//			Iterator iterator = set.iterator();
-//			while(iterator.hasNext()) {
-//				Map.Entry mentry = (Map.Entry)iterator.next();
-//				countEntries++;
-//			}
-//			in.close();
-//			fileIn.close();
-//		} catch (IOException ioe1) {
-//	          ioe1.printStackTrace();
-//	          return;
-//		} catch (ClassNotFoundException c) {
-//			System.out.println("Music class not found");
-//        	c.printStackTrace();
-//        	return;
-//		}
-//		String artist, album;
-//		System.out.println("How many entries?");
-//		int amountOfEntries = input.nextInt();
-//		input.nextLine();
-//
-//		for(int i = 1 + countEntries; i <= amountOfEntries + countEntries; i++) {
-//			if (i <= countEntries)
-//				continue;
-//			
-//			System.out.println("Enter the artist and album formatted as 'artist - album'");
-//			artistAlbum = input.nextLine();
-//			artist = input.next();
-//			album = input.next();
-//			artistAlbum = new Music(artist, album);
-//			hm.put(i, artistAlbum);
-//		}
-//		
-//		try {
-//			FileOutputStream fileOut = new FileOutputStream("1.txt");
-//			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-//			out.writeObject(hm);
-//			out.close();
-//			fileOut.close();
-//		} catch (IOException ioe2) {
-//			ioe2.printStackTrace();
-//		}
-//
-//		hm.forEach((key, value) -> System.out.println(key + ": " + value));
-//      
-//		input.close();
-//		System.exit(0);
-	}
-
 }
